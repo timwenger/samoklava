@@ -7,7 +7,7 @@ container_cmd ?= docker
 container_args ?= -w /board -v $(shell pwd):/board --rm
 
 setup:
-	npm install -g npm
+	npm install
 
 # outputs from 
 output/pcbs/board.kicad_pcb output/pcbs/top_plate.kicad_pcb output/pcbs/bottom_plate.kicad_pcb &: samoklava.yaml
